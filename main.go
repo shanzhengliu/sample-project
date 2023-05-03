@@ -1,12 +1,12 @@
-//hello world for go
+// hello world for go
 package main
 
 import (
-	"fmt"
-	"runtime"
+	databases "modules/gin/Databases"
+	"modules/gin/Router"
 )
 
 func main() {
-	fmt.Println("hello world")
-	fmt.Println(runtime.Version())
+	databases.ConnectDB()
+	Router.InitRouter()
 }
