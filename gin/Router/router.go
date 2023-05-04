@@ -14,6 +14,6 @@ func InitRouter() {
 	{
 		admin.GET("/", controllers.TestInsert)
 	}
-	router.Run(":8080")
+	router.Run(":8081")
 
 }

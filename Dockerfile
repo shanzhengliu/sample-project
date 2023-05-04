@@ -7,5 +7,5 @@ RUN go build -o main ./main.go
 
 FROM scratch
 COPY --from=builder /application/main /application/main
-EXPOSE 8080
+EXPOSE 8081
 ENTRYPOINT [ "/application/main" ]
